@@ -1,16 +1,30 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Outfit, Geist_Mono, Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
+
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['200', '300', '500','700'],
+  variable: "--font-poppins"
+
+})
+
+const outfit = Outfit({
+  subsets: ['latin'],
+  variable: "--font-outfit"
+})
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -19,13 +33,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} `} 
+        className={`${poppins.variable} ${geistMono.variable} `} 
       >
         {children}
       </body>
