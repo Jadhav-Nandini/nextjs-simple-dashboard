@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Geist_Mono, Inter, Poppins } from "next/font/google";
+import { Geist_Mono,  Poppins } from "next/font/google";
 // import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
 
