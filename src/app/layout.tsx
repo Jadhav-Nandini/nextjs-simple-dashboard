@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Outfit, Geist_Mono, Inter, Poppins } from "next/font/google";
+// import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
 
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-})
+// const inter = Inter({
+//   subsets: ['latin'],
+//   variable: '--font-inter',
+// })
 
 
 const geistMono = Geist_Mono({
@@ -21,10 +22,10 @@ const poppins = Poppins({
 
 })
 
-const outfit = Outfit({
-  subsets: ['latin'],
-  variable: "--font-outfit"
-})
+// const outfit = Outfit({
+//   subsets: ['latin'],
+//   variable: "--font-outfit"
+// })
 
 export const metadata: Metadata = {
   title: "Dashboard",

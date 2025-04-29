@@ -16,7 +16,7 @@ const Dashboard = () => {
         {/* cards section */}
         <Link href="/dashboard/tasks" >
         <div className="rounded-2xl p-5 shadow-[2px_2px_6px_gray,-2px_-2px_6px_gray] h-full hover:scale-95 transform transition-all ">
-          <div className="flex">
+          <div className="flex justify-between">
           <h2 className="font-heading font-medium">Tasks</h2> <span>📋</span>
           </div>
         <p className="font-heading font-extralight">
@@ -27,7 +27,7 @@ const Dashboard = () => {
 
         <Link href="/dashboard/analytics" >
         <div className="rounded-2xl p-5 shadow-[2px_2px_6px_gray,-2px_-2px_6px_gray] h-full hover:scale-95 transform transition-all ">
-          <div className="flex">
+          <div className="flex justify-between ">
           <h2 className="font-heading font-medium">Analytics</h2> <span>📊</span>
           </div>
         <p className="font-heading font-extralight">
@@ -38,7 +38,7 @@ const Dashboard = () => {
 
         <Link href="/dashboard/settings/account" >
         <div className="rounded-2xl p-5 shadow-[2px_2px_6px_gray,-2px_-2px_6px_gray] h-full hover:scale-95 transform transition-all ">
-          <div className="flex">
+          <div className="flex justify-between">
           <h2 className="font-heading font-medium">Settings</h2> <span>⚙️</span>
           </div>
         <p className="font-heading font-extralight">
